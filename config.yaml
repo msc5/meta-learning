@@ -1,0 +1,29 @@
+train: True
+test: False
+
+arch:
+    CustomNetwork
+    # arch: CustomNetwork
+    # arch: RelationNetwork
+
+name: 20-way-1-shot-deeper-with-enc-2
+
+dataset:
+    Omniglot
+    # miniImageNet
+
+loss_fn:
+    MSE
+    # loss_fn: NLL
+    # loss_fn: CrossEntropy
+
+k: 20 # Number of classes
+n: 1 # Number of examples per support class
+m: 19 # Number of examples per query class
+
+epochs: 250
+learning_rate: 0.001
+schedule:
+    - 40
+    - 250
+    - 1000
