@@ -1,4 +1,4 @@
-# COS429-Final
+# Meta-Learning in Computer Vision
 
 By Alkin Kaz, Sam Liang, Matthew Coleman.
 
